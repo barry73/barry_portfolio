@@ -1,0 +1,147 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #555;
+  z-index: 900;
+}
+
+#nav-header > span {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  margin: 14px 10px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+#nav-header a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-header a:hover {
+  color: #99cccc;
+  text-decoration: none;
+}
+
+#nav-header a.active {
+  font-weight: bold;
+}
+
+#hero {
+  width: 100%;
+  height: 400px;
+  background-image: url(http://files.parsetfss.com/67729e39-4f53-4250-bf30-3ef3801e280c/tfss-ffbe407d-abad-4660-b78d-e7c7e5fd7220-popos_logo24.png);
+  background-position: center;
+  background-color: #99cccc;
+  background-repeat: no-repeat;
+}
+
+#cards-container {
+  text-align: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all .1s ease-in-out;
+}
+
+.card:hover {
+  opacity: 0.5;
+}
+
+.card .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.lightbox {
+  position: fixed;
+  left: 58%;
+  top: 70px;
+  width: 60%;
+  height: 450px;
+  margin: 0 0 0 -37.5%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.poster {
+ width: 100%;
+ height: 300px;
+ border-radius: 0 0 10px 10px;
+ background-size: cover;
+ position: absolute;
+ background-repeat: no-repeat;
+ top: 150px;
+}
+
+.title {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  width: 90%;
+  overflow: hidden;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  white-space: nowrap;
+  font-family: 'Oswald', sans-serif;
+}
+
+.description {
+  position: absolute;
+  left: 15px;
+  top: 60px;
+  width: 92%;
+  height: 68px;
+  overflow-y: scroll;
+  color: black;
+  text-align: left;
+  font-family: 'Lora', serif;
+}
+
+#mask {
+  position: fixed;
+  display: none;
+  opacity: .8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+#mask-container {
+  display: none;
+}
+
+#lightbox-container {
+  display: none;
+}

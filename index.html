@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barry Offringa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="cards.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:700,400|Lora' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!-- Navigational header goes here-->
+  <div id="nav-header">
+    <span></span>
+    <span><a class="active" href="index.html">barryo</a></span>
+    <span><a href="http://www.spur.org/publications/spur-report/2009-01-01/secrets-san-francisco" target="_blank">about</a></span>
+    <span><a href="https://www.google.com/maps/d/viewer?mid=zU2pXOZD9P28.kgCCxgatCZ_o&hl=en_US" target="_blank">map</a></span>
+  </div>
+
+  <!-- Hero poster image -->
+  <div id="hero" href="index.html"></div>
+  
+  <div id="cards-container"></div>
+  <div id="mask"></div>
+  <div id="lightbox-container"></div>
+  
+  
+  <!-- Thumbnail template. -->
+  <script id="thumbnail-template" type="x-tmpl-mustache">
+    <div id="{{ id }}" class="card" style="background-image: url({{ image }})"></div>
+  </script>  
+
+  <!-- Lightbox template. -->
+  <script id="lightbox-template" type="x-tmpl-mustache">
+    <div class="lightbox">
+      <div class="poster" style="background-image: url({{ image }})"></div>
+      <div class="title">{{ title }}</div>
+      <div class="description">{{ description }}</div>
+    </div>
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="cards.js"></script>
+  
+</body>
+</html>
